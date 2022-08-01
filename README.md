@@ -2,8 +2,18 @@
 
 ## Backend
 
-- hello
+### Relationships
+- Watches:
+ - Belong to **Collections**
 
+## Front End
+
+### Info
+- Name
+- Manufacturer
+- Year
+- Materials
+- Image 
 
 # Phase 3 Project Guidelines
 
