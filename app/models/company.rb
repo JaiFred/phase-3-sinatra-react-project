@@ -1,4 +1,4 @@
 class Company < ActiveRecord::Base
-    has_many :collections
-    has_many :watches, through: :collections
+    has_many :watches
+    has_many :collections, through: :watches
 end

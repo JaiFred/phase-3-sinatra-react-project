@@ -1,4 +1,4 @@
 class Collection < ActiveRecord::Base
-    belongs_to :watches
-    belongs_to :companies
+    has_many :companies
+    has_many :watches, through: :companies
 end
