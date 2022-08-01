@@ -3,7 +3,9 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   get "/" do
-    { message: "Good luck with your project!" }.to_json
+    { message: "We started the server!" }.to_json
   end
+
+  ## http://localhost:9292/
 
 end
