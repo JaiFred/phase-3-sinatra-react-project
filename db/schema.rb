@@ -14,10 +14,12 @@ ActiveRecord::Schema.define(version: 2022_08_01_190513) do
 
   create_table "collections", force: :cascade do |t|
     t.string "name"
+    t.integer "company_id"
   end
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
+    t.string "country"
     t.integer "founded"
   end
 
@@ -27,8 +29,8 @@ ActiveRecord::Schema.define(version: 2022_08_01_190513) do
     t.string "manufacturer"
     t.string "materials"
     t.integer "year"
-    t.integer "companies_id"
-    t.integer "collections_id"
+    t.integer "company_id"
+    t.integer "collection_id"
   end
 
 end

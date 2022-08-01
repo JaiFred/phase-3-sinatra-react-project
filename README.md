@@ -31,6 +31,11 @@
 - Access watch info by clicking
 - Make it absolutely stylin'
 
+## Advanced Deliverables
+- make an Admin and a user page for
+- Admin has access to update watches, companies and post new watches and new companies
+- user has ability to navigate through websit but only add comments to watches
+
 
 # Phase 3 Project Guidelines
 
