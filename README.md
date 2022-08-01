@@ -4,7 +4,17 @@
 
 ### Relationships
 - Watches:
- - Belong to **Collections**
+  - belongs_to **:collections**
+  - belongs_to **:companies**
+- Companies:
+  - has_many :watches
+  - has_many :collections, through: :watches
+- Collections:
+  - has_many :watches
+  - has_many :companies, through: :watches
+### Goals
+- Setup Relationships between Watches, Collections and Companies
+- Create watch for company (and collection?)
 
 ## Front End
 
@@ -14,6 +24,13 @@
 - Year
 - Materials
 - Image 
+
+### Goals
+- Have Companies populate with collections, which populate with watches
+- Implement Routes/Links
+- Access watch info by clicking
+- Make it absolutely stylin'
+
 
 # Phase 3 Project Guidelines
 
