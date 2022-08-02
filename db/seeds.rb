@@ -13,7 +13,7 @@ Watch.destroy_all
 
 puts "--------- 🌱 Seeding timepiece companies ⏱ ---------"
 
-comp1 = Company.create(name: "Patek Phillipe" country: "Switzerland" founded: "1839")
+comp1 = Company.create(name: "Patek Phillipe", country: "Switzerland", founded: "1839")
 comp2 = Company.create(name: "Richard Mille", country: "Switzerland", founded: "1999")
 comp3 = Company.create(name: "Hublot", country: "Switzerland", founded: "1980")
 comp4 = Company.create(name: "Tag Heuer", country: "Switzerland", founded: "1860")
@@ -98,35 +98,23 @@ puts "--------- 🌱 Finished seeding collections ⏱ ---------"
 puts "--------- 🌱 Seeding watches ⏱ ---------"
 
 ## Patek Philippe Watches: Nautilus
-patW1 = Watch.create(image_url: "https://static.patek.com/images/articles/face_white/220/7118_1200A_001_1@2x.jpg", name: "7118/1200A" manufacturer: "Patek Philippe" materials: "Steel, Nautilus fold-over clasp, 56 diamonds", year: "", company_id: comp1, collection_id: pat1 )
-patW2 = Watch.create(image_url: "https://static.patek.com/images/articles/face_white/220/7118_1R_001_1@2x.jpg", name: "7118/1R" manufacturer: "Patek Philippe" materials: "Rose gold, Nautilus fold-over clasp" year: "", company_id: comp1, collection_id: pat1)
+patW1 = Watch.create(image_url: "https://static.patek.com/images/articles/face_white/220/7118_1200A_001_1@2x.jpg", name: "7118/1200A", manufacturer: "Patek Philippe", materials: "Steel, Nautilus fold-over clasp, 56 diamonds", year: "", company_id: comp1.id, collection_id: pat1.id)
+patW2 = Watch.create(image_url: "https://static.patek.com/images/articles/face_white/220/7118_1R_001_1@2x.jpg", name: "7118/1R", manufacturer: "Patek Philippe", materials: "Rose gold, Nautilus fold-over clasp", year: "", company_id: comp1.id, collection_id: pat1.id)
 
 ## Patek Philippe Watches: Grand Complications
-PatW3 = Watch.create(image_url: "https://static.patek.com/images/articles/face_white/220/5270J_001_001@2x.jpg", name: "5270J" manufacturer: "Patek Philippe" materials: "Alligator leather with square scales, hand-stitched, matte chocolate brown, Fold-over clasp.", year: "", company_id: comp1, collection_id: pat2)
+PatW3 = Watch.create(image_url: "https://static.patek.com/images/articles/face_white/220/5270J_001_001@2x.jpg", name: "5270J", manufacturer: "Patek Philippe", materials: "Alligator leather with square scales, hand-stitched, matte chocolate brown, Fold-over clasp.", year: "", company_id: comp1.id, collection_id: pat2.id)
 
 ## Richard Mille Watches: RM 74-02
-rmW1 = Watch.create(image_url: "https://revolutionwatch.com/wp-content/uploads/2021/05/08-RM-74-01-and-74-02.jpg", name: "RM 74-02" manufacturer: "Richard Mille" materials: "Cermet, micro-blasted grade 5 titanium, 3N red gold case, Gold Carbon TPT", year: "", company_id: comp2, collection_id: rm1)
+rmW1 = Watch.create(image_url: "https://revolutionwatch.com/wp-content/uploads/2021/05/08-RM-74-01-and-74-02.jpg", name: "RM 74-02", manufacturer: "Richard Mille", materials: "Cermet, micro-blasted grade 5 titanium, 3N red gold case, Gold Carbon TPT", year: "", company_id: comp2.id, collection_id: rm1.id)
 
 ## Richard Mille Watches: RM 74-01
-rmW2 = Watch.create(image_url: "https://revolutionwatch.com/wp-content/uploads/2021/05/03-RM-74-01-and-74-02.jpg", name: "74-01" manufacturer: "Richard Mille" materials: "grade 5 titanium Baseplate and bridges 90% grade 5 titanium, 6% aluminium and 4% vanadium alloy.", year: "", company_id: comp2, collection_id: rm9)
+rmW2 = Watch.create(image_url: "https://revolutionwatch.com/wp-content/uploads/2021/05/03-RM-74-01-and-74-02.jpg", name: "74-01", manufacturer: "Richard Mille", materials: "grade 5 titanium Baseplate and bridges 90% grade 5 titanium, 6% aluminium and 4% vanadium alloy.", year: "", company_id: comp2.id, collection_id: rm9.id)
 
 ## Hublot Watches: Novelties
-hbW1 = Watch.create(image_url: "https://www.hublot.com/sites/default/files/styles/watch_tile_472_592/public/2022-03/square-bang-king-gold-42-mm-soldier-shot.png?itok=0TGenOew", name: "Unico King Gold 42MM", manufacturer: "Hublot", materials: "platinum, satin finishing, high-tech ceramic, rubber and carbon.", year: "", company_id: comp3, collection_id: hb1)
+hbW1 = Watch.create(image_url: "https://www.hublot.com/sites/default/files/styles/watch_tile_472_592/public/2022-03/square-bang-king-gold-42-mm-soldier-shot.png?itok=0TGenOew", name: "Unico King Gold 42MM", manufacturer: "Hublot", materials: "platinum, satin finishing, high-tech ceramic, rubber and carbon.", year: "", company_id: comp3.id, collection_id: hb1.id)
 
 ##Hublot Watches:
-hbW2 = Watch.create(image_url: "https://www.hublot.com/sites/default/files/styles/watch_tile_472_592/public/big-bang-original-steel-44-mm-301.SX.130.RX-soldier-shot.png?itok=rimJPh2H", name: "Big Bang" manufacturer: "Hublot", materials: "polish and satin finish stainless steel, black structured rubber straps", year: "", company_id: comp3, collection_id: hb2)
-
-
-
-
-
-
-
-
-
-
-
-
+hbW2 = Watch.create(image_url: "https://www.hublot.com/sites/default/files/styles/watch_tile_472_592/public/big-bang-original-steel-44-mm-301.SX.130.RX-soldier-shot.png?itok=rimJPh2H", name: "Big Bang", manufacturer: "Hublot", materials: "polish and satin finish stainless steel, black structured rubber straps", year: 1950, company_id: comp3.id, collection_id: hb2.id)
 
 
 

@@ -2,7 +2,7 @@ class CreateWatches < ActiveRecord::Migration[6.1]
   def change
     create_table :watches do |watches|
       watches.string :image_url
-      watches.string :names
+      watches.string :name
       watches.string :manufacturer
       watches.string :materials
       watches.integer :year

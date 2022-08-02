@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2022_08_01_190513) do
 
   create_table "watches", force: :cascade do |t|
     t.string "image_url"
-    t.string "names"
+    t.string "name"
     t.string "manufacturer"
     t.string "materials"
     t.integer "year"
