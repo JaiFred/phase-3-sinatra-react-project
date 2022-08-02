@@ -12,6 +12,7 @@ Watch.destroy_all
 # end
 
 puts "--------- 🌱 Seeding timepiece companies ⏱ ---------"
+
 comp1 = Company.create(name: "Patek Phillipe" country: "Switzerland" founded: "1839")
 comp2 = Company.create(name: "Richard Mille", country: "Switzerland", founded: "1999")
 comp3 = Company.create(name: "Hublot", country: "Switzerland", founded: "1980")
@@ -38,6 +39,7 @@ comp23 = Company.create(name: "Bulova", country: "Switzerland", founded: "1875")
 comp24 = Company.create(name: "Oris", country: "Switzerland", founded: "1904")
 comp25 = Company.create(name: "Mortiz Grossman", country: "Germany", founded: "2008")
 comp26 = Company.create(name: "Jaeger LeCoultre", country: "Switzerland", founded: "1833")
+
 puts "--------- 🌱 finished seeding companies ⏱ ---------"
 
 
@@ -70,7 +72,7 @@ rm8 = Collection.create(name: "RM 69", company_id: comp2)
 rm9 = Collection.create(name: "RM 74-01", company_id: comp2)
 rm10 = Collection.create(name: "RM 47", company_id: comp2)
 
-##Hublot
+## Hublot
 hb1 = Collection.create(name: "Novelties", company_id: comp3)
 hb2 = Collection.create(name: "Big Bang", company_id: comp3)
 hb3 = Collection.create(name: "Classic Fusion", company_id: comp3)
@@ -78,7 +80,6 @@ hb4 = Collection.create(name: "Shaped", company_id: comp3)
 hb5 = Collection.create(name: "MP", company_id: comp3)
 
 ##Tag Heuer
-
 
 
 
@@ -93,6 +94,17 @@ puts "--------- 🌱 Finished seeding collections ⏱ ---------"
 # watches.integer :company_id
 # watches.integer :collection_id
 # end
+
+puts "--------- 🌱 Seeding watches ⏱ ---------"
+
+## Patek Philippe Watches
+patW1 = Watch.create(image_url: "https://static.patek.com/images/articles/face_white/220/7118_1200A_001_1@2x.jpg", name: "7118/1200A" manufacturer: "Patek Philippe" materials: "Steel, Nautilus fold-over clasp, 56 diamonds", year: "", company_id: comp1, collection_id: pat1 )
+patW2 = Watch.create(image_url: "https://static.patek.com/images/articles/face_white/220/7118_1R_001_1@2x.jpg", name: "7118/1R" manufacturer: "Patek Philippe" materials: "Rose gold, Nautilus fold-over clasp," year: "", company_id: comp1, collection_id: pat1)
+
+##
+
+
+
 
 
 
