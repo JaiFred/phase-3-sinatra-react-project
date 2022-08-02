@@ -51,33 +51,33 @@ puts "--------- 🌱 finished seeding companies ⏱ ---------"
 puts "--------- 🌱 Seeding timepiece collections ⏱ ---------"
 
 ## Patek Philippe
-pat1 = Collection.create(name: "Nautilus", company_id: comp1)
-pat2 = Collection.create(name: "Grand Complications", company_id: comp1)
-pat3 = Collection.create(name: "Complications", company_id: comp1)
-pat4 = Collection.create(name: "Aquanaut", company_id: comp1)
-pat5 = Collection.create(name: "Gondolo", company_id: comp1)
-pat6 = Collection.create(name: "Calatrava", company_id: comp1)
-pat7 = Collection.create(name: "Golden Ellipse", company_id: comp1)
-pat8 = Collection.create(name: "Twenty~4", company_id: comp1)
+pat1 = Collection.create(name: "Nautilus", company_id: comp1.id)
+pat2 = Collection.create(name: "Grand Complications", company_id: comp1.id)
+pat3 = Collection.create(name: "Complications", company_id: comp1.id)
+pat4 = Collection.create(name: "Aquanaut", company_id: comp1.id)
+pat5 = Collection.create(name: "Gondolo", company_id: comp1.id)
+pat6 = Collection.create(name: "Calatrava", company_id: comp1.id)
+pat7 = Collection.create(name: "Golden Ellipse", company_id: comp1.id)
+pat8 = Collection.create(name: "Twenty~4", company_id: comp1.id)
 
 ## Richard Mille
-rm1 = Collection.create(name: "RM 74-02", company_id: comp2)
-rm2 = Collection.create(name: "RM 72", company_id: comp2)
-rm3 = Collection.create(name: "RM 71-02", company_id: comp2)
-rm4 = Collection.create(name: "RM 70-01", company_id: comp2)
-rm5 = Collection.create(name: "RM 67-01", company_id: comp2)
-rm6 = Collection.create(name: "RM 57-01", company_id: comp2)
-rm7 = Collection.create(name: "RM 67-02", company_id: comp2)
-rm8 = Collection.create(name: "RM 69", company_id: comp2)
-rm9 = Collection.create(name: "RM 74-01", company_id: comp2)
-rm10 = Collection.create(name: "RM 47", company_id: comp2)
+rm1 = Collection.create(name: "RM 74-02", company_id: comp2.id)
+rm2 = Collection.create(name: "RM 72", company_id: comp2.id)
+rm3 = Collection.create(name: "RM 71-02", company_id: comp2.id)
+rm4 = Collection.create(name: "RM 70-01", company_id: comp2.id)
+rm5 = Collection.create(name: "RM 67-01", company_id: comp2.id)
+rm6 = Collection.create(name: "RM 57-01", company_id: comp2.id)
+rm7 = Collection.create(name: "RM 67-02", company_id: comp2.id)
+rm8 = Collection.create(name: "RM 69", company_id: comp2.id)
+rm9 = Collection.create(name: "RM 74-01", company_id: comp2.id)
+rm10 = Collection.create(name: "RM 47", company_id: comp2.id)
 
 ## Hublot
-hb1 = Collection.create(name: "Novelties", company_id: comp3)
-hb2 = Collection.create(name: "Big Bang", company_id: comp3)
-hb3 = Collection.create(name: "Classic Fusion", company_id: comp3)
-hb4 = Collection.create(name: "Shaped", company_id: comp3)
-hb5 = Collection.create(name: "MP", company_id: comp3)
+hb1 = Collection.create(name: "Novelties", company_id: comp3.id)
+hb2 = Collection.create(name: "Big Bang", company_id: comp3.id)
+hb3 = Collection.create(name: "Classic Fusion", company_id: comp3.id)
+hb4 = Collection.create(name: "Shaped", company_id: comp3.id)
+hb5 = Collection.create(name: "MP", company_id: comp3.id)
 
 ##Tag Heuer
 

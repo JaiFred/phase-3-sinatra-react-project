@@ -6,9 +6,21 @@ class ApplicationController < Sinatra::Base
     { message: "We started the server!" }.to_json
   end
 
-  get "/watches" do
-    { }.to_json
+  get "/company" do
+    Company.all.to_json
   end
+
+  get "/collection" do
+    Collection.all.to_json
+  end
+
+  get "/watches" do
+    Watch.all.to_json
+  end
+
+  
+
+  
 
   ## http://localhost:9292/
 
