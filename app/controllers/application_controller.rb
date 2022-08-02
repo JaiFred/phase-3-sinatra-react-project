@@ -18,9 +18,6 @@ class ApplicationController < Sinatra::Base
     Watch.all.to_json
   end
 
-  
-
-  
 
   ## http://localhost:9292/
 
