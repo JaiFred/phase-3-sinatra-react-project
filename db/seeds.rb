@@ -29,18 +29,18 @@ comp11 = Company.create(name: "Zenith", country: "Switzerland", founded: "1865",
 comp12 = Company.create(name: "Ebel", country: "Switzerland", founded: "1911", image_url: "https://www.firstclasswatches.co.uk/current/images/logo/large/ebel.png")
 comp13 = Company.create(name: "Cartier", country: "Paris", founded: "1847", image_url: "https://1000logos.net/wp-content/uploads/2016/10/Cartier-logo.png")
 comp14 = Company.create(name: "Citizen", country: "Japan", founded: "1918", image_url: "https://download.logo.wine/logo/Citizen_Watch/Citizen_Watch-Logo.wine.png")
-comp15 = Company.create(name: "Ball", country: "Switzerland", founded: "1891", image_url: "")
-comp16 = Company.create(name: "Swatch", country: "Switzerland", founded: "1983", image_url: "")
-comp17 = Company.create(name: "Orient", country: "Japan", founded: "1950", image_url: "")
-comp18 = Company.create(name: "Tissot", country: "Switzerland", founded: "1853", image_url: "")
-comp19 = Company.create(name: "Seiko", country: "Japan", founded: "1881", image_url: "")
-comp20 = Company.create(name: "Jacob & Co.", country: "United States of America", founded: "1986", image_url: "")
-comp21 = Company.create(name: "MB&F", country: "Switzerland", founded: "2005", image_url: "")
-comp22 = Company.create(name: "Artisans de Genève", country: "Switzerland", founded: "2005", image_url: "")
-comp23 = Company.create(name: "Bulova", country: "Switzerland", founded: "1875", image_url: "")
-comp24 = Company.create(name: "Oris", country: "Switzerland", founded: "1904", image_url: "")
-comp25 = Company.create(name: "Mortiz Grossman", country: "Germany", founded: "2008", image_url: "")
-comp26 = Company.create(name: "Jaeger LeCoultre", country: "Switzerland", founded: "1833", image_url: "")
+comp15 = Company.create(name: "Ball", country: "Switzerland", founded: "1891", image_url: "https://office.amjwatches.co.uk/storage/images/category/26/category_logo_image.png")
+comp16 = Company.create(name: "Swatch", country: "Switzerland", founded: "1983", image_url: "https://cdn.freebiesupply.com/logos/thumbs/2x/swatch-1-logo.png")
+comp17 = Company.create(name: "Orient", country: "Japan", founded: "1950", image_url: "https://logos-download.com/wp-content/uploads/2016/10/Orient_Watch_logo.png")
+comp18 = Company.create(name: "Tissot", country: "Switzerland", founded: "1853", image_url: "https://brandslogos.com/wp-content/uploads/images/large/tissot-logo.png")
+comp19 = Company.create(name: "Seiko", country: "Japan", founded: "1881", image_url: "https://cdn.freebiesupply.com/logos/large/2x/seiko-logo-png-transparent.png")
+comp20 = Company.create(name: "Jacob & Co.", country: "United States of America", founded: "1986", image_url: "https://static2.worldtempus.com/cache/brand/l/o/logo-javob-co-geneve_335x187.png")
+comp21 = Company.create(name: "MB&F", country: "Switzerland", founded: "2005", image_url: "https://images.surfacemag.com/app/uploads/2017/07/mbfblack.png")
+comp22 = Company.create(name: "Artisans de Genève", country: "Switzerland", founded: "2005", image_url: "https://www.starsonfield.it/wp-content/uploads/2021/05/artisansgeneve-logo.png")
+comp23 = Company.create(name: "Bulova", country: "Switzerland", founded: "1875", image_url: "https://logos-download.com/wp-content/uploads/2019/11/Bulova_Logo.png")
+comp24 = Company.create(name: "Oris", country: "Switzerland", founded: "1904", image_url: "https://logodix.com/logo/2091246.png")
+comp25 = Company.create(name: "Mortiz Grossman", country: "Germany", founded: "2008", image_url: "https://www.holytrinity-lights.com/wp-content/uploads/holytrinity-referenzen-moritz-grossmann-logo.png")
+comp26 = Company.create(name: "Jaeger LeCoultre", country: "Switzerland", founded: "1833", image_url: "https://1000logos.net/wp-content/uploads/2018/10/Jaeger-leCoultre-logo.png")
 
 puts "--------- 🌱 finished seeding companies ⏱ ---------"
 
@@ -101,6 +101,7 @@ puts "--------- 🌱 Seeding watches ⏱ ---------"
 
 ## Patek Philippe Watches: Nautilus
 patW1 = Watch.create(image_url: "https://static.patek.com/images/articles/face_white/220/7118_1200A_001_1@2x.jpg", name: "7118/1200A", manufacturer: "Patek Philippe", materials: "Steel, Nautilus fold-over clasp, 56 diamonds", year: "", company_id: comp1.id, collection_id: pat1.id)
+
 patW2 = Watch.create(image_url: "https://static.patek.com/images/articles/face_white/220/7118_1R_001_1@2x.jpg", name: "7118/1R", manufacturer: "Patek Philippe", materials: "Rose gold, Nautilus fold-over clasp", year: "", company_id: comp1.id, collection_id: pat1.id)
 
 ## Patek Philippe Watches: Grand Complications
