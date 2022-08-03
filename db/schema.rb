@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2022_08_01_190513) do
     t.string "name"
     t.string "country"
     t.integer "founded"
+    t.string "image_url"
   end
 
   create_table "watches", force: :cascade do |t|

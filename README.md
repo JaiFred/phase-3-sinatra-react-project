@@ -12,9 +12,16 @@
 - Collections:
   - has_many :watches
   - has_many :companies, through: :watches
+
 ### Goals
 - Setup Relationships between Watches, Collections and Companies
-- Create watch for company (and collection?)
+- Filter function
+- Create a new watch
+- Delete a watch
+- Update watch information
+- Create a Collection
+
+
 
 ## Front End
 
@@ -30,6 +37,7 @@
 - Implement Routes/Links
 - Access watch info by clicking
 - Make it absolutely stylin'
+
 
 ## Advanced Deliverables
 - make an Admin and a user page for
