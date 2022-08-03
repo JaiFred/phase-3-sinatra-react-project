@@ -1,5 +1,5 @@
 # require "pry"
-
+1
 class ApplicationController < Sinatra::Base
 
   set :default_content_type, 'application/json'
@@ -23,6 +23,26 @@ class ApplicationController < Sinatra::Base
 
   get "/watches" do
     Watch.all.to_json
+  end
+
+  get '/watches/:id' do 
+    # we're going to receive a params hash
+    # 1. using a dynamic route will create a key/value 
+    # 2. by submitting some information
+    # params = {"id"=>"3"}
+    watch = watch.find(params[:id])
+    watch.to_json
+  end
+
+  patch "/watches/:id" do
+    # this function updates the watch information
+    # we're going to receive a params hash
+    # 1. using a dynamic route will create a key/value 
+    # 2. by submitting some information
+    # params = {"id"=>"3"}
+    watch = watch.find(params[:id])
+    watch.update(params)
+    watch.to_json
   end
 
   
