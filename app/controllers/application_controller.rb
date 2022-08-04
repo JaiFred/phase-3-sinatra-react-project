@@ -10,27 +10,49 @@ class ApplicationController < Sinatra::Base
     { message: "We started the server!" }.to_json
   end
 
-  get "/company" do
-    
-    # binding.pry
-    
+  get "/companies" do
     Company.all.to_json
   end
 
-  get "/collection" do
+  get "/collections/:id" do
+    companyCollection = Collection.find(params[:id])
+    cC = Collection.find(params[:company_id])
+    companyCollection.to_json
+    cC.to_json
+  end
+
+  get "/collections" do
     Collection.all.to_json
   end
+
+  # get "/collections/:id" do
+  #   collection = Collection.find(params[:id])
+  #   collection.to_json
+  # end
+
+  # get "collections/:id/watches" do
+  #   # get company name 
+  #   # have watches = that company/
+  # end
 
   get "/watches" do
     Watch.all.to_json
   end
 
-  get '/watches/:id' do 
+  get '/watches/:id' do
     # we're going to receive a params hash
     # 1. using a dynamic route will create a key/value 
     # 2. by submitting some information
     # params = {"id"=>"3"}
-    watch = watch.find(params[:id])
+    binding.pry
+    watch = Watch.find(params[:id])
+    watch.to_json
+  end
+
+  post "/watches" do
+
+    watch = Watch.create(params)
+    # {"image_url" => "", "manufacturer" => "", "materials" => "", "name" => "", "year" => "", "company_id" => "", "collection_id" => ""}
     watch.to_json
   end
 
@@ -40,9 +62,20 @@ class ApplicationController < Sinatra::Base
     # 1. using a dynamic route will create a key/value 
     # 2. by submitting some information
     # params = {"id"=>"3"}
-    watch = watch.find(params[:id])
+    watch = Watch.find(params[:id])
     watch.update(params)
     watch.to_json
+  end
+
+  delete "/watches/:id" do
+    watch = Watch.find(params[:id])
+    watch.destroy
+  end
+
+  private
+
+  def watch_params
+    params.permit(:image_url, :name, :manufacturer, :materials, :year, :company_id, :collection_id)
   end
 
   
