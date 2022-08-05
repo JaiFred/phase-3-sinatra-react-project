@@ -14,11 +14,14 @@ class ApplicationController < Sinatra::Base
     Company.all.to_json
   end
 
-  get "/collections/:id" do
-    companyCollection = Collection.find(params[:id])
-    cC = Collection.find(params[:company_id])
+  get "/companies/:id" do
+    company = Company.find(params[:id])
+    company.to_json
+  end
+
+  get "/collections/:company_id" do
+    companyCollection = Collection.find(params[:company_id])
     companyCollection.to_json
-    cC.to_json
   end
 
   get "/collections" do
