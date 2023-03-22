@@ -25,7 +25,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/collections" do
-    Collection.all.to_json
+    # binding.pry
+    Collection.all.to_json(include: :company_id)
   end
 
   # get "/collections/:id" do
@@ -47,7 +48,7 @@ class ApplicationController < Sinatra::Base
     # 1. using a dynamic route will create a key/value 
     # 2. by submitting some information
     # params = {"id"=>"3"}
-    binding.pry
+    # binding.pry
     watch = Watch.find(params[:id])
     watch.to_json
   end

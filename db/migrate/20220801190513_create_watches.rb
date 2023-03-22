@@ -5,7 +5,6 @@ class CreateWatches < ActiveRecord::Migration[6.1]
       watches.string :name
       watches.string :manufacturer
       watches.string :materials
-      watches.integer :year
       watches.integer :company_id
       watches.integer :collection_id
     end

@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 2022_08_01_190513) do
     t.string "name"
     t.string "manufacturer"
     t.string "materials"
-    t.integer "year"
     t.integer "company_id"
     t.integer "collection_id"
   end
