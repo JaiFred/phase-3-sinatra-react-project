@@ -20,13 +20,14 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/collections/:company_id" do
-    companyCollection = Collection.find(params[:company_id])
+    # binding.pry
+    companyCollection = Collection.where(company_id: params[:company_id])
     companyCollection.to_json
   end
 
   get "/collections" do
     # binding.pry
-    Collection.all.to_json(include: :company_id)
+    Collection.all.to_json#(include: :company_id)
   end
 
   # get "/collections/:id" do

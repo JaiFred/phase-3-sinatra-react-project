@@ -1,4 +1,4 @@
 class Watch < ActiveRecord::Base
-    belongs_to :collections
-    belongs_to :companies
+    belongs_to :collection
+    belongs_to :company
 end
